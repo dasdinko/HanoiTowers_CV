@@ -32,7 +32,7 @@ namespace HanoiTowers.Scripts.Menu
             if (discsCount < 2 || discsCount > discsCap)
             {
                 _warningText.enabled = true;
-                _warningText.text = String.Format("Введите пожалуйста число между 2 и {0} (задано только 7 цветов)", discsCap);
+                _warningText.text = String.Format("Введите пожалуйста число между 2 и {0} (взято только 7 цветов)", discsCap);
                 _input.text = discsCount < 2 ? 2.ToString() : 7.ToString();
                 return;
             }
